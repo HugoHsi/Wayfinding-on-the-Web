@@ -1,0 +1,180 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: helvetica;
+}
+
+#bkg {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: saddlebrown;
+  opacity: 0;
+  z-index: -1;
+  transition: 300ms ease all;
+}
+
+#wheel {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+
+#close {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#search {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+#refresh {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -100%);
+}
+
+#previous-page {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translate(0, -100%);
+  display: none;
+}
+
+#next-page {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-100%, -100%);
+  display: none;
+}
+
+#tab {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+#new-tab {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transform: translate(-100%, 0);
+  display: none;
+}
+
+#close-tab {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translate(-100%, -100%);
+  display: none;
+}
+
+#favorites {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+img {
+  transition: 300ms ease all;
+  border-radius: 10%;
+}
+
+img:hover {
+  background-color: black;
+  opacity: 50%;
+}
+
+#tab-page {
+  flex-flow: row wrap;
+  gap: 10px;
+  display: none;
+}
+
+.tab-div {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rosybrown;
+  color: floralwhite;
+  line-height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.tab-div:hover {
+  background-color: sandybrown;
+}
+
+#googleBox {
+  position: absolute;
+  display: none;
+  left: 50%;
+    top: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 80%;
+  border-radius: 30px;
+  border: 3px solid wheat;
+  background-color: transparent;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#page-counter {
+  font-size: 20px;
+  background-color: wheat; 
+  width: fit-content;
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+}
+
+#fav-page {
+  display: none;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.fav-outer-div {
+  width: 150px;
+  height: 100px;
+  background-color: floralwhite;
+  border: 2px solid wheat;
+}
+
+.fav-inner-div {
+  width: 145px;
+  height: 20px;
+  background-color: wheat;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
